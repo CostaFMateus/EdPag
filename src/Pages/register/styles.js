@@ -1,65 +1,62 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+import styled from "styled-components";
 
-body {
-  background-image: url(./assets/v915-wit-008-b.jpg);
-}
-
-.master-box {
+export const MasterBox = styled.div`
   display: flex;
   justify-content: start;
   margin: 150px 90px;
   border-radius: 30px;
-}
+`
 
-.box-left {
+export const BoxLeft = styled.section`
   display: flex;
   height: 40rem;
   width: 60rem;
-}
 
-.box-rigth {
+  & > img {
+  height: 30rem;
+  width: 30rem;
+  margin: 3rem 20px 10px 0;
+  }
+`
+
+export const BoxRigth = styled.section`
   height: 40rem;
   width: 40rem;
   background-color: white;
   border-radius: 30px;
-}
 
-.box-rigth h1 {
+  & > h1 {
   color: rgb(145, 2, 2);
   background-color: white;
   margin: 30px 100px 0 40px;
-}
+  }
 
-.login {
+`
+
+export const Login = styled.div`
   display: flex;
   flex-direction: column;
   background-color: transparent;
   opacity: 0.9;
-  padding-top: 30rem;
+  padding-top: 27rem;
   margin: 1rem 5rem 0 5rem;
   border-radius: 30px;
   box-shadow: 0 0 10px 2px #fafafa;
-} 
 
-.login h2 {
+  & > h2 {
   background-color: transparent;
   display: block;
   font-size: 23px;
   margin-block-start: -19.17em;
-  margin-block-end: 1.83em;
   margin-inline-start: 8rem;
   font-weight: bold;
-}
+  }
 
-.login h2 span {
+  & > h2 > span {
   color:rgb(145, 2, 2);
-}
+  }
 
-.login input {
+  & > input {
   font-size: 24;
   outline: none;
   border: none;
@@ -68,11 +65,11 @@ body {
   height: 50px;
   display: block;
   margin: 10px;
-}
+  }
 
-.login button {
+  & > button {
   border: none;
-  margin: 1rem 7rem;
+  margin: 1rem 7rem 0 7rem;
   border-radius: 15px;
   display: block;
   background-color: rgb(145, 2, 2);
@@ -80,33 +77,26 @@ body {
   width: 15rem;
   color: white;
   font-size: 20px;
-  cursor: pointer; 
-
-}
-
-.login button:active {
+  cursor: pointer;
+  }
+  
+  & > button:active {
   scale: 0.9;
   transition: 0.3s;  
   box-shadow: 3px 3px #191919;
-}
+  }
+  
+`
+export const LoginMedia = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 6rem;
+  width: 100%;
 
-.forget-password{
-  font-weight: 700;
-  display: block;
-  height: 100%;
-  margin: 10px 0 20px 18rem;
-  background-color: transparent;
-  color: rgb(145, 2, 2);
+  & > img {
+  height: 40px;
+  width: 40px;
   cursor: pointer;
-}
-
-.create-account {
-  font-weight: 600;
-  display: block;
-  height: 100%;
-  background-color: transparent;
-  margin: 50px 0px 5px 21rem;
-  color: rgb(145, 2, 2);
-  cursor: pointer;
-}
-
+  }
+`
